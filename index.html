@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestri - Υπό Κατασκευή</title>
+    <style>
+        /* Βασικό Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        /* Styling του Logo */
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 30px;
+            /* Animation για να τραβάει την προσοχή */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #e30613; /* Το κόκκινο χρώμα του λογοτύπου */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .divider {
+            width: 50px;
+            height: 3px;
+            background-color: #e30613;
+            margin: 20px auto;
+        }
+
+        /* Animation εμφάνισης */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Προσαρμογή για κινητά */
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+            .logo { max-width: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="Maestri-logo.png" alt="Maestri Logo" class="logo">
+        
+        <h1>Σύντομα κοντά σας!</h1>
+        <div class="divider"></div>
+        <p>Η ιστοσελίδα μας βρίσκεται <strong>υπό κατασκευή</strong>.<br> 
+        Εργαζόμαστε εντατικά για να σας προσφέρουμε την καλύτερη δυνατή εμπειρία.</p>
+        
+        <p style="margin-top: 40px; font-size: 0.9rem;">&copy; 2024 Maestri. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
