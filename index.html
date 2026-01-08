@@ -51,6 +51,36 @@
             background-color: #e30613;
             margin: 20px auto;
         }
+        /* Ενότητα για τα PDF */
+        .download-section {
+            margin-top: 35px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 20px;
+            background-color: #e30613;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .btn-download:hover {
+            background-color: #b3050f;
+            transform: translateY(-2px);
+        }
+
+        .btn-download i {
+            margin-right: 8px;
+        }
 
         /* Animation εμφάνισης */
         @keyframes fadeIn {
@@ -76,7 +106,16 @@
         <p>Η ιστοσελίδα μας βρίσκεται <strong>υπό ανανέωση</strong>.<br> 
         Εργαζόμαστε εντατικά για να σας προσφέρουμε μια νέα καλύτερη δυνατή εμπειρία.</p><br>
         Παραγγελίες προς το παρόν μπορείτε να τις αποστέλετε μέσω email στο sales@romahellas.gr, τηλεφωνικά στο 21 1411 5877 ή<br>
-        σε επικοινωνία με τον συνεργάτη πωλητή σας.<br><br>
+        σε επικοινωνία με τον συνεργάτη πωλητή σας.<br>
+        <div class="download-section">
+            <a href="file1.pdf" class="btn-download" download>
+                📄 Βιομηχανικός Κατάλογος Προϊόντων
+            </a>
+            <a href="file2.pdf" class="btn-download" download>
+                📄 Γραφείου Κατάλογος Προϊόντων
+            </a>
+        </div>
+        <br><br>
         <b><i>Σας ευχόμαστε καλή χρονιά και ένα δημιουργικό 2026!!</b></i>
         
         <p style="margin-top: 40px; font-size: 0.9rem;">&copy; 2026 Maestri. All rights reserved.</p>
